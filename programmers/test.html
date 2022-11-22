@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function solution(month, day){
+    let date = new Date(2022,month-1,day) // 입력받은 월,일의 날짜 구함
+    date.setDate(date.getDate() + 98) //98일 후의 날짜 구함
+    let nineDate = date.toLocaleString() // "2022. 4. 26. 오전 12:00:00"
+  
+    let newMon = Number(nineDate.split('.')[1]) //.으로 자른 배열의 1번째 인덱스 > 월
+    let newDay = Number(nineDate.split('.')[2]) //.으로 자른 배열의 2번째 인덱스 > 일
+    
+    let result = `"${newMon}월 ${newDay}일"` //위에서 나온 월,일을 입력한다
+  
+    return result
+  }
+  console.log(solution(1,18))
+</script>
+<body>
+  
+</body>
+</html>
