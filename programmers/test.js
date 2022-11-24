@@ -1,6 +1,7 @@
-const array = [1,2,3,4]
-function sample(items) {
-  console.log("itmes :", items)
-}
+const array = ['사과','배','귤','바나나']
 
-sample(array)
+console.log('# for in 반복문')
+array.forEach((a, i) => console.log(i))
+
+console.log('# for of 반복문')
+array.forEach(a => console.log(a))

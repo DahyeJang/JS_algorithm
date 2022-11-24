@@ -3,10 +3,10 @@
 
 function solution(strings, n) {
 
-  let sortStrings = strings.sort() 
+  let sortStrings = strings.sort() // 처음부터 오름차순 정렬해줌. 그럼 나중에 같은 알파벳이 나왔을 때 또다시 정렬할 필요가 없기 때문
   let newArr = []
   for (let i = 0; i < sortStrings.length; i++) {
-    newArr.push([sortStrings[i], sortStrings[i][n]]) // ['sun', 'u']
+    newArr.push([sortStrings[i], sortStrings[i][n]]) // ['sun', 'u'] 이런식으로 정렬
   }
   
   //let arrSort = newArr.sort((a, b) => a[1] - b[1]) // 안됌. 숫자만 되는듯
