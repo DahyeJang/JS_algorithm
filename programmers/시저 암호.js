@@ -1,6 +1,6 @@
 function solution(s, n) {
   const alpha =
-    "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ                                                  ";
+    "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ                          ";
   return s
     .split("")
     .map((e) => alpha[alpha.indexOf(e) + n])
